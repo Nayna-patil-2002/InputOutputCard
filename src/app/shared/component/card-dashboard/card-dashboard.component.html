@@ -1,0 +1,13 @@
+<div class="container mt-5">
+    <div class="row mb-5">
+        <div class="col-md-6 offset-3">
+            <app-card-form (addpost)="onAddCard($event)"></app-card-form>
+        </div>
+    </div>
+   <div class="row">
+  <div class="col-md-4 mb-5" *ngFor="let nature of  NatureArray; let i=index">
+    <app-card [naturesCard]="nature" [index]="i" (remove)="onRemoveCard($event)" ></app-card>
+  </div>
+</div>
+
+</div>

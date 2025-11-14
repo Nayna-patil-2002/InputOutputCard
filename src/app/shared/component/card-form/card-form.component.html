@@ -1,0 +1,39 @@
+ <!-- <form [formGroup]="natureForm">
+   <mat-form-field>
+  <mat-label>Input</mat-label>
+  <input matInput>
+</mat-form-field>
+<mat-form-field>
+ 
+</mat-form-field>
+<mat-form-field>
+  <mat-label>Textarea</mat-label>
+  <textarea matInput></textarea>
+</mat-form-field>
+
+ </form> -->
+
+ <div class="card">
+  <div class="card-body">
+    <form [formGroup]="natureForm" (ngSubmit)="onaddPost()">
+  <mat-form-field appearance="fill" class="w-100">
+    <mat-label>Title</mat-label>
+    <input matInput formControlName="title" placeholder="Enter title">
+  </mat-form-field>
+  <mat-form-field  appearance="fill" class="w-100">
+    <mat-label>Image</mat-label>
+     <input matInput formControlName="image" placeholder="Enter image">
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="w-100">
+    <mat-label>Description</mat-label>
+    <input matInput formControlName="description" placeholder="Enter description">
+   
+  </mat-form-field>
+   
+    <button mat-raised-button color="primary">Add Post</button>
+   
+  
+</form>
+  </div>
+ </div>
+ 

@@ -1,0 +1,22 @@
+   
+
+  <div class="card mb-5 h-100 ">
+  <div class="card-header">
+     <h2>{{ naturesCard.title | uppercase }}</h2>
+  </div>
+
+  <div class="card-body">
+    <figure class="imgCard">
+      <img [src]="naturesCard.image" class="img-fluid h-100 w-100">
+
+      <figcaption class="descrip">
+        <p>{{ naturesCard.description }}</p>
+      </figcaption>
+    </figure>
+  </div>
+
+  <div class="card-footer d-flex justify-content-between">
+    <button class="btn btn-outline-success" [disabled]="true">Edit</button>
+    <button class="btn btn-outline-danger" (click)="onRemove()">Remove</button>
+  </div>
+</div>
