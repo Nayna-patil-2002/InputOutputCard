@@ -18,6 +18,6 @@ export class SnackbarService {
 
   openSnackbar(msg:string){
     
-    this._matsnack.open('', "close", this.matconfig )
+    this._matsnack.open(msg, "close", this.matconfig )
   }
 }
