@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <app-tableform 
+            (stdupdateObj)="onupdate($event)"
+            (emitstdAdd)="onstdadd($event)"
+            [editobj]="editObj"
+            ></app-tableform>
+        </div>
+        <div class="col-md-8">
+            <app-table
+            (stdObj)="onremoveStd($event)"
+            (editObj)="onEdit($event)"
+            [studentArr]="stdArr"></app-table>
+        </div>
+    </div>
+</div>

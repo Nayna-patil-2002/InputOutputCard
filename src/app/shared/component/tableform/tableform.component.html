@@ -1,0 +1,40 @@
+
+<div class="card">
+  <div class="card-body">
+    <form [formGroup]="stdForm" (ngSubmit)="onstdAdd()">
+  <mat-form-field appearance="fill" class="w-100">
+    <mat-label>Name</mat-label>
+    <input matInput formControlName="name" >
+  </mat-form-field>
+  <mat-form-field  appearance="fill" class="w-100">
+    <mat-label>Email</mat-label>
+     <input matInput formControlName="email" >
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="w-100">
+    <mat-label>Contact</mat-label>
+    <input matInput formControlName="phone" >
+   
+  </mat-form-field>
+  <mat-form-field appearance="fill" class="w-100">
+    <mat-label>City</mat-label>
+    <input matInput formControlName="city" >
+   
+  </mat-form-field>
+   
+    <button mat-raised-button color="primary"
+    *ngIf="!isinEditMode"
+    type="submit"
+    >Add Student</button>
+    <button mat-raised-button color="primary"
+    *ngIf="isinEditMode"
+    type="button"
+    (click)="onUpdate()"
+    >
+      Update Student
+    </button>
+    
+   
+  
+</form>
+  </div>
+ </div>

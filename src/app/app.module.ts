@@ -8,6 +8,9 @@ import { CardFormComponent } from './shared/component/card-form/card-form.compon
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
+import { TabledashboardComponent } from './shared/component/tabledashboard/tabledashboard.component';
+import { TableformComponent } from './shared/component/tableform/tableform.component';
+import { TableComponent } from './shared/component/table/table.component';
 
 
 @NgModule({
@@ -16,6 +19,9 @@ import { MaterialModule } from './material/material.module';
     CardComponent,
     CardDashboardComponent,
     CardFormComponent,
+    TabledashboardComponent,
+    TableformComponent,
+    TableComponent,
     
   ],
   imports: [
